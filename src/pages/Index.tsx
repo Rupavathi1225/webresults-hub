@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Shield } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const Index = () => {
   return (
@@ -15,7 +15,7 @@ const Index = () => {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex justify-center">
           <Button
             asChild
             size="lg"
@@ -24,17 +24,6 @@ const Index = () => {
             <Link to="/webresults">
               <ExternalLink className="w-5 h-5 mr-2" />
               Browse Results
-            </Link>
-          </Button>
-          <Button
-            asChild
-            size="lg"
-            variant="outline"
-            className="border-primary/50 hover:bg-primary/10"
-          >
-            <Link to="/auth">
-              <Shield className="w-5 h-5 mr-2" />
-              Admin Login
             </Link>
           </Button>
         </div>
